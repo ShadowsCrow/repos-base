@@ -20,6 +20,21 @@ Cópia local e online dos repos mais interessantes, sempre na última versão.
 
 O clone fica em `F:\develop\repos-base`. A tarefa agendada `repos-base-pull` do Windows roda `git pull` todo dia e ao fazer logon.
 
+## Repos grandes (fork + clone)
+
+Repos grandes demais para copiar em `repos/` ficam em `forks.txt`, como fork no GitHub e clone local raso.
+
+| Fork | Original | Pasta local |
+|---|---|---|
+| [ShadowsCrow/leis](https://github.com/ShadowsCrow/leis) | [ctresb/leis](https://github.com/ctresb/leis) | `F:\develop\leis-br` |
+
+A tarefa agendada `repos-base-forks` roda `scripts/update-forks.ps1` todo dia às 09:15 e no logon. O script:
+
+1. roda `gh repo sync` no fork. Se o original for apagado, o fork fica como está;
+2. roda `git pull` no clone local. Se o original reescrever o histórico, o clone é realinhado com o fork.
+
+O log fica em `.git\update-forks.log`. Essa atualização depende do PC ligado.
+
 ## Fontes e licenças
 
 Cada pasta em `repos/` mantém o arquivo de licença da fonte original. Confira a licença antes de adicionar um repo.
