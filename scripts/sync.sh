@@ -18,7 +18,7 @@ while IFS= read -r line || [ -n "$line" ]; do
   echo "==> $repo"
   rm -rf "$TMP/src"
   # autocrlf=false mantém os bytes da fonte também quando o script roda no Windows.
-  if ! git -c core.autocrlf=false clone --quiet --depth 1"https://github.com/$repo" "$TMP/src"; then
+  if ! git -c core.autocrlf=false clone --quiet --depth 1 "https://github.com/$repo" "$TMP/src"; then
     echo "AVISO: clone falhou, mantendo a cópia anterior de $repo" >&2
     failed=1
     continue
