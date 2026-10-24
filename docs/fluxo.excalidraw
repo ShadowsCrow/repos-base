@@ -8,7 +8,7 @@
       "type": "text",
       "x": 60,
       "y": 24,
-      "width": 705.28,
+      "width": 482.55999999999995,
       "height": 40.0,
       "angle": 0,
       "strokeColor": "#1e1e1e",
@@ -30,8 +30,8 @@
       "updated": 1761300000000,
       "link": null,
       "locked": false,
-      "text": "Como o repos-base se mantém atualizado",
-      "originalText": "Como o repos-base se mantém atualizado",
+      "text": "Como o repos-base funciona",
+      "originalText": "Como o repos-base funciona",
       "fontSize": 32,
       "fontFamily": 5,
       "textAlign": "center",
@@ -43,13 +43,13 @@
     {
       "id": "a",
       "type": "rectangle",
-      "x": 71.4,
-      "y": 145.0,
-      "width": 257.2,
-      "height": 90.0,
+      "x": 42.400000000000006,
+      "y": 132.5,
+      "width": 315.2,
+      "height": 115.0,
       "angle": 0,
       "strokeColor": "#1e1e1e",
-      "backgroundColor": "#ffd43b",
+      "backgroundColor": "#a5d8ff",
       "fillStyle": "solid",
       "strokeWidth": 2,
       "strokeStyle": "solid",
@@ -82,10 +82,10 @@
     {
       "id": "a-t",
       "type": "text",
-      "x": 101.4,
-      "y": 165.0,
-      "width": 197.2,
-      "height": 50.0,
+      "x": 72.4,
+      "y": 152.5,
+      "width": 255.2,
+      "height": 75.0,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -106,8 +106,8 @@
       "updated": 1761300000000,
       "link": null,
       "locked": false,
-      "text": "sources.txt\n(lista dono/nome)",
-      "originalText": "sources.txt\n(lista dono/nome)",
+      "text": "Repo online\nShadowsCrow/repos-base\n(primeira versão)",
+      "originalText": "Repo online\nShadowsCrow/repos-base\n(primeira versão)",
       "fontSize": 20,
       "fontFamily": 5,
       "textAlign": "center",
@@ -119,13 +119,13 @@
     {
       "id": "b",
       "type": "rectangle",
-      "x": 405.0,
+      "x": 470.0,
       "y": 145.0,
-      "width": 350.0,
+      "width": 220,
       "height": 90.0,
       "angle": 0,
       "strokeColor": "#1e1e1e",
-      "backgroundColor": "#a5d8ff",
+      "backgroundColor": "#ffd43b",
       "fillStyle": "solid",
       "strokeWidth": 2,
       "strokeStyle": "solid",
@@ -162,9 +162,9 @@
     {
       "id": "b-t",
       "type": "text",
-      "x": 435.0,
+      "x": 522.0,
       "y": 165.0,
-      "width": 290.0,
+      "width": 115.99999999999999,
       "height": 50.0,
       "angle": 0,
       "strokeColor": "#1e1e1e",
@@ -186,8 +186,8 @@
       "updated": 1761300000000,
       "link": null,
       "locked": false,
-      "text": "GitHub Action sync\n06:00 UTC · push · manual",
-      "originalText": "GitHub Action sync\n06:00 UTC · push · manual",
+      "text": "Você clona\numa vez",
+      "originalText": "Você clona\numa vez",
       "fontSize": 20,
       "fontFamily": 5,
       "textAlign": "center",
@@ -231,7 +231,7 @@
           "type": "arrow"
         },
         {
-          "id": "edge2",
+          "id": "edge4",
           "type": "arrow"
         }
       ],
@@ -266,8 +266,8 @@
       "updated": 1761300000000,
       "link": null,
       "locked": false,
-      "text": "repos/dono/nome\n+ sources.lock",
-      "originalText": "repos/dono/nome\n+ sources.lock",
+      "text": "Cópia local\nrepos/dono/nome",
+      "originalText": "Cópia local\nrepos/dono/nome",
       "fontSize": 20,
       "fontFamily": 5,
       "textAlign": "center",
@@ -279,13 +279,13 @@
     {
       "id": "d",
       "type": "rectangle",
-      "x": 802.4,
+      "x": 7.600000000000023,
       "y": 375.0,
-      "width": 315.2,
+      "width": 384.79999999999995,
       "height": 90.0,
       "angle": 0,
       "strokeColor": "#1e1e1e",
-      "backgroundColor": "#a5d8ff",
+      "backgroundColor": "#ffd43b",
       "fillStyle": "solid",
       "strokeWidth": 2,
       "strokeStyle": "solid",
@@ -309,10 +309,6 @@
         {
           "id": "edge2",
           "type": "arrow"
-        },
-        {
-          "id": "edge3",
-          "type": "arrow"
         }
       ],
       "updated": 1761300000000,
@@ -322,9 +318,9 @@
     {
       "id": "d-t",
       "type": "text",
-      "x": 832.4,
+      "x": 37.60000000000002,
       "y": 395.0,
-      "width": 255.2,
+      "width": 324.79999999999995,
       "height": 50.0,
       "angle": 0,
       "strokeColor": "#1e1e1e",
@@ -346,8 +342,8 @@
       "updated": 1761300000000,
       "link": null,
       "locked": false,
-      "text": "Repo online\nShadowsCrow/repos-base",
-      "originalText": "Repo online\nShadowsCrow/repos-base",
+      "text": "atualizar.txt\n(os repos que você escolheu)",
+      "originalText": "atualizar.txt\n(os repos que você escolheu)",
       "fontSize": 20,
       "fontFamily": 5,
       "textAlign": "center",
@@ -359,10 +355,10 @@
     {
       "id": "e",
       "type": "rectangle",
-      "x": 463.0,
-      "y": 362.5,
-      "width": 234.0,
-      "height": 115.0,
+      "x": 434.0,
+      "y": 375.0,
+      "width": 292.0,
+      "height": 90.0,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "#a5d8ff",
@@ -387,11 +383,11 @@
           "type": "text"
         },
         {
-          "id": "edge3",
+          "id": "edge2",
           "type": "arrow"
         },
         {
-          "id": "edge4",
+          "id": "edge3",
           "type": "arrow"
         }
       ],
@@ -402,10 +398,10 @@
     {
       "id": "e-t",
       "type": "text",
-      "x": 493.0,
-      "y": 382.5,
-      "width": 174.0,
-      "height": 75.0,
+      "x": 464.0,
+      "y": 395.0,
+      "width": 231.99999999999997,
+      "height": 50.0,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -426,8 +422,8 @@
       "updated": 1761300000000,
       "link": null,
       "locked": false,
-      "text": "Tarefa agendada\nrepos-base-pull\n09:00 + logon",
-      "originalText": "Tarefa agendada\nrepos-base-pull\n09:00 + logon",
+      "text": "scripts/atualizar.sh\n(agendado por você)",
+      "originalText": "scripts/atualizar.sh\n(agendado por você)",
       "fontSize": 20,
       "fontFamily": 5,
       "textAlign": "center",
@@ -439,13 +435,13 @@
     {
       "id": "f",
       "type": "rectangle",
-      "x": 48.19999999999999,
+      "x": 843.0,
       "y": 375.0,
-      "width": 303.6,
+      "width": 234.0,
       "height": 90.0,
       "angle": 0,
       "strokeColor": "#1e1e1e",
-      "backgroundColor": "#ffd43b",
+      "backgroundColor": "#e5dbff",
       "fillStyle": "solid",
       "strokeWidth": 2,
       "strokeStyle": "solid",
@@ -467,6 +463,10 @@
           "type": "text"
         },
         {
+          "id": "edge3",
+          "type": "arrow"
+        },
+        {
           "id": "edge4",
           "type": "arrow"
         }
@@ -478,9 +478,9 @@
     {
       "id": "f-t",
       "type": "text",
-      "x": 78.2,
+      "x": 873.0,
       "y": 395.0,
-      "width": 243.6,
+      "width": 174.0,
       "height": 50.0,
       "angle": 0,
       "strokeColor": "#1e1e1e",
@@ -502,8 +502,8 @@
       "updated": 1761300000000,
       "link": null,
       "locked": false,
-      "text": "Cópia local\nF:/develop/repos-base",
-      "originalText": "Cópia local\nF:/develop/repos-base",
+      "text": "Repos originais\nno GitHub",
+      "originalText": "Repos originais\nno GitHub",
       "fontSize": 20,
       "fontFamily": 5,
       "textAlign": "center",
@@ -515,9 +515,9 @@
     {
       "id": "edge0",
       "type": "arrow",
-      "x": 328.6,
+      "x": 357.6,
       "y": 190,
-      "width": 76.39999999999998,
+      "width": 112.39999999999998,
       "height": 0,
       "angle": 0,
       "strokeColor": "#1e1e1e",
@@ -545,7 +545,7 @@
           0
         ],
         [
-          76.39999999999998,
+          112.39999999999998,
           0
         ]
       ],
@@ -565,14 +565,14 @@
       "elbowed": false
     },
     {
-      "id": "edge1",
-      "type": "arrow",
-      "x": 755.0,
-      "y": 190,
-      "width": 88.0,
-      "height": 0,
+      "id": "edge0-l",
+      "type": "text",
+      "x": 366.82,
+      "y": 159.5,
+      "width": 93.96,
+      "height": 22.5,
       "angle": 0,
-      "strokeColor": "#1e1e1e",
+      "strokeColor": "#495057",
       "backgroundColor": "transparent",
       "fillStyle": "solid",
       "strokeWidth": 2,
@@ -587,6 +587,43 @@
       "version": 1,
       "versionNonce": 3274,
       "isDeleted": false,
+      "boundElements": null,
+      "updated": 1761300000000,
+      "link": null,
+      "locked": false,
+      "text": "git clone",
+      "originalText": "git clone",
+      "fontSize": 18,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "edge1",
+      "type": "arrow",
+      "x": 690.0,
+      "y": 190,
+      "width": 153.0,
+      "height": 0,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aF",
+      "roundness": null,
+      "seed": 1555,
+      "version": 1,
+      "versionNonce": 3365,
+      "isDeleted": false,
       "boundElements": [],
       "updated": 1761300000000,
       "link": null,
@@ -597,7 +634,7 @@
           0
         ],
         [
-          88.0,
+          153.0,
           0
         ]
       ],
@@ -617,49 +654,12 @@
       "elbowed": false
     },
     {
-      "id": "edge1-l",
-      "type": "text",
-      "x": 746.8,
-      "y": 159.5,
-      "width": 104.39999999999999,
-      "height": 22.5,
-      "angle": 0,
-      "strokeColor": "#495057",
-      "backgroundColor": "transparent",
-      "fillStyle": "solid",
-      "strokeWidth": 2,
-      "strokeStyle": "solid",
-      "roughness": 1,
-      "opacity": 100,
-      "groupIds": [],
-      "frameId": null,
-      "index": "aF",
-      "roundness": null,
-      "seed": 1555,
-      "version": 1,
-      "versionNonce": 3365,
-      "isDeleted": false,
-      "boundElements": null,
-      "updated": 1761300000000,
-      "link": null,
-      "locked": false,
-      "text": "clone raso",
-      "originalText": "clone raso",
-      "fontSize": 18,
-      "fontFamily": 5,
-      "textAlign": "left",
-      "verticalAlign": "top",
-      "containerId": null,
-      "autoResize": true,
-      "lineHeight": 1.25
-    },
-    {
       "id": "edge2",
       "type": "arrow",
-      "x": 960,
-      "y": 235.0,
-      "width": 0,
-      "height": 140.0,
+      "x": 392.4,
+      "y": 420,
+      "width": 41.60000000000002,
+      "height": 0,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -682,22 +682,22 @@
       "locked": false,
       "points": [
         [
-          0,
-          0.0
+          0.0,
+          0
         ],
         [
-          0,
-          140.0
+          41.60000000000002,
+          0
         ]
       ],
       "lastCommittedPoint": null,
       "startBinding": {
-        "elementId": "c",
+        "elementId": "d",
         "focus": 0,
         "gap": 1
       },
       "endBinding": {
-        "elementId": "d",
+        "elementId": "e",
         "focus": 0,
         "gap": 1
       },
@@ -708,9 +708,9 @@
     {
       "id": "edge2-l",
       "type": "text",
-      "x": 970.0,
-      "y": 293.75,
-      "width": 135.72,
+      "x": 387.09999999999997,
+      "y": 389.5,
+      "width": 52.199999999999996,
       "height": 22.5,
       "angle": 0,
       "strokeColor": "#495057",
@@ -732,8 +732,8 @@
       "updated": 1761300000000,
       "link": null,
       "locked": false,
-      "text": "commit + push",
-      "originalText": "commit + push",
+      "text": "lista",
+      "originalText": "lista",
       "fontSize": 18,
       "fontFamily": 5,
       "textAlign": "left",
@@ -745,9 +745,9 @@
     {
       "id": "edge3",
       "type": "arrow",
-      "x": 802.4,
+      "x": 726.0,
       "y": 420,
-      "width": 105.39999999999998,
+      "width": 117.0,
       "height": 0,
       "angle": 0,
       "strokeColor": "#1e1e1e",
@@ -775,18 +775,18 @@
           0
         ],
         [
-          -105.39999999999998,
+          117.0,
           0
         ]
       ],
       "lastCommittedPoint": null,
       "startBinding": {
-        "elementId": "d",
+        "elementId": "e",
         "focus": 0,
         "gap": 1
       },
       "endBinding": {
-        "elementId": "e",
+        "elementId": "f",
         "focus": 0,
         "gap": 1
       },
@@ -797,9 +797,9 @@
     {
       "id": "edge3-l",
       "type": "text",
-      "x": 707.94,
+      "x": 716.64,
       "y": 389.5,
-      "width": 83.52,
+      "width": 135.72,
       "height": 22.5,
       "angle": 0,
       "strokeColor": "#495057",
@@ -821,8 +821,8 @@
       "updated": 1761300000000,
       "link": null,
       "locked": false,
-      "text": "git pull",
-      "originalText": "git pull",
+      "text": "última versão",
+      "originalText": "última versão",
       "fontSize": 18,
       "fontFamily": 5,
       "textAlign": "left",
@@ -834,10 +834,10 @@
     {
       "id": "edge4",
       "type": "arrow",
-      "x": 463.0,
-      "y": 420,
-      "width": 111.19999999999999,
-      "height": 0,
+      "x": 960,
+      "y": 375.0,
+      "width": 0,
+      "height": 140.0,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -860,22 +860,22 @@
       "locked": false,
       "points": [
         [
-          0.0,
-          0
+          0,
+          0.0
         ],
         [
-          -111.19999999999999,
-          0
+          0,
+          -140.0
         ]
       ],
       "lastCommittedPoint": null,
       "startBinding": {
-        "elementId": "e",
+        "elementId": "f",
         "focus": 0,
         "gap": 1
       },
       "endBinding": {
-        "elementId": "f",
+        "elementId": "c",
         "focus": 0,
         "gap": 1
       },
@@ -886,9 +886,9 @@
     {
       "id": "edge4-l",
       "type": "text",
-      "x": 360.41999999999996,
-      "y": 389.5,
-      "width": 93.96,
+      "x": 970.0,
+      "y": 293.75,
+      "width": 177.48,
       "height": 22.5,
       "angle": 0,
       "strokeColor": "#495057",
@@ -910,8 +910,8 @@
       "updated": 1761300000000,
       "link": null,
       "locked": false,
-      "text": "--ff-only",
-      "originalText": "--ff-only",
+      "text": "substitui a pasta",
+      "originalText": "substitui a pasta",
       "fontSize": 18,
       "fontFamily": 5,
       "textAlign": "left",
