@@ -1,3 +1,4 @@
 # Um repo do GitHub por linha, no formato dono/nome.
 # Linhas vazias e linhas com # são ignoradas.
 yihui-dev/awesome-opus5-5-videos
+morluto/rea
