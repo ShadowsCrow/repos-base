@@ -1,4 +1,0 @@
-# Repos grandes demais para copiar em repos/. Ficam como fork no GitHub + clone local.
-# Formato: <fork no GitHub> <pasta local>
-# scripts/update-forks.ps1 atualiza o fork a partir do original e depois atualiza o clone local.
-ShadowsCrow/leis F:\develop\leis-br
