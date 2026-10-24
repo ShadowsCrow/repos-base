@@ -129,3 +129,15 @@ repos-base/
 ## ⚖️ Licenças
 
 Os repositórios do acervo pertencem aos autores originais e seguem as licenças deles. Este repositório só guarda cópias para uso pessoal.
+
+<br/>
+
+<div align="center">
+
+Feito por [**ShadowsCrow**](https://github.com/ShadowsCrow) · Tech Lead SRE AI & Automação
+
+⭐ Se o acervo ajudou, deixe uma estrela no repositório.
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8e2de2,50:302b63,100:0f0c29&height=120&section=footer" alt="Rodapé"/>
+
+</div>

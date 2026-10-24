@@ -11,7 +11,7 @@ $bash = "C:\Program Files\Git\bin\bash.exe"
 if (-not (Test-Path $bash)) { throw "Git Bash não encontrado em $bash" }
 
 $acao = New-ScheduledTaskAction -Execute $bash `
-  -Argument "-c `"cd '$($raiz -replace '\','/')' && bash scripts/atualizar.sh >> atualizar.log 2>&1`""
+  -Argument "-c `"cd '$($raiz.Replace('\','/'))' && bash scripts/atualizar.sh >> atualizar.log 2>&1`""
 $gatilhos = @(
   (New-ScheduledTaskTrigger -Daily -At $Hora),
   (New-ScheduledTaskTrigger -AtLogOn -User $env:USERNAME)
