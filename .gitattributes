@@ -1,4 +1,4 @@
 *.sh text eol=lf
 *.yml text eol=lf
-# Conteúdo copiado fica byte a byte igual à fonte.
+# Copied content stays byte-for-byte identical to the source.
 repos/** -text

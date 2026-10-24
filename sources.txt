@@ -1,5 +1,6 @@
-# Um repo do GitHub por linha, no formato dono/nome.
-# Linhas vazias e linhas com # são ignoradas.
+# One GitHub repo per line, as owner/name.
+# Blank lines and lines starting with # are ignored.
 yihui-dev/awesome-opus5-5-videos
 morluto/rea
 public-apis/public-apis
+AhmadHassan-BTed/Turnitout-Humanizer

@@ -1,0 +1,20 @@
+{
+  "title": "How repos-base works",
+  "gap": [380, 230],
+  "nodes": [
+    {"id": "a", "label": "Online repo\nShadowsCrow/repos-base\n(first version)", "col": 0, "row": 0, "color": "blue"},
+    {"id": "b", "label": "You clone it\nonce", "col": 1, "row": 0, "color": "yellow"},
+    {"id": "c", "label": "Local copy\nrepos/owner/name", "col": 2, "row": 0, "color": "green"},
+    {"id": "d", "label": "update.txt\n(the repos you chose)", "col": 0, "row": 1, "color": "yellow"},
+    {"id": "e", "label": "scripts/update.sh\n(scheduled by you)", "col": 1, "row": 1, "color": "blue"},
+    {"id": "f", "label": "Original repos\non GitHub", "col": 2, "row": 1, "color": "violet"}
+  ],
+  "edges": [
+    {"from": "a", "to": "b", "label": "git clone"},
+    {"from": "b", "to": "c"},
+    {"from": "d", "to": "e", "label": "list"},
+    {"from": "e", "to": "f", "label": "latest version"},
+    {"from": "f", "to": "c", "label": "replaces the folder"}
+  ],
+  "notes": []
+}

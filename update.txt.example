@@ -1,0 +1,6 @@
+# Repos that your machine keeps up to date. One per line, as owner/name.
+# Only repos listed in sources.txt are allowed. Delete the line of any repo you do not want to update.
+# Copy this file to update.txt (update.txt is not tracked by Git).
+yihui-dev/awesome-opus5-5-videos
+public-apis/public-apis
+morluto/rea

@@ -1,143 +1,143 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:8e2de2&height=200&section=header&text=repos-base&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Um%20kit%20de%20repos%20para%20ter%20sempre%20%C3%A0%20m%C3%A3o&descAlignY=60&descSize=20" alt="repos-base"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:8e2de2&height=200&section=header&text=repos-base&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=A%20kit%20of%20repos%20to%20always%20keep%20at%20hand&descAlignY=60&descSize=20" alt="repos-base"/>
 
-![Modelo](https://img.shields.io/badge/atualiza%C3%A7%C3%A3o-local%20e%20opcional-8e2de2?style=for-the-badge&labelColor=0f0c29)
-![Sem Action](https://img.shields.io/badge/automa%C3%A7%C3%A3o-na%20sua%20m%C3%A1quina-8e2de2?style=for-the-badge&labelColor=0f0c29)
-![Licença](https://img.shields.io/badge/fontes-MIT-8e2de2?style=for-the-badge&labelColor=0f0c29)
+![Model](https://img.shields.io/badge/updates-local%20and%20optional-8e2de2?style=for-the-badge&labelColor=0f0c29)
+![No Action](https://img.shields.io/badge/automation-on%20your%20machine-8e2de2?style=for-the-badge&labelColor=0f0c29)
+![License](https://img.shields.io/badge/sources-MIT-8e2de2?style=for-the-badge&labelColor=0f0c29)
 
 </div>
 
 <br/>
 
-## 💡 A ideia
+## 💡 The idea
 
-O **repos-base** é um acervo de repositórios úteis. O repositório online guarda a **primeira versão** de cada um. Depois de clonar, **você escolhe** quais repos a sua máquina mantém atualizados.
+**repos-base** is a collection of useful repositories. The online repository holds the **first version** of each one. After you clone it, **you choose** which repos your machine keeps up to date.
 
-O resultado é um kit de utilidades que funciona offline: prompts, listas de APIs, ferramentas e referências, tudo numa pasta só.
+The result is a toolkit that works offline: prompts, API lists, tools and references, all in one folder.
 
-- **Nada roda no GitHub.** O repositório online não tem automação. Ele é só a base inicial.
-- **Atualização por escolha.** Você lista em `atualizar.txt` os repos que quer manter na última versão.
-- **Agendamento seu.** Você decide se o script roda todo dia, toda semana ou só quando você pedir.
-- **Sem limite de tamanho no seu lado.** A atualização local não passa pelo limite de 100 MB por arquivo do GitHub.
+- **Nothing runs on GitHub.** The online repository has no automation. It is only the starting point.
+- **Updates by choice.** You list in `update.txt` the repos you want on the latest version.
+- **Your own schedule.** You decide whether the script runs every day, every week or only on demand.
+- **No size limit on your side.** The local update does not hit the 100 MB per file limit of GitHub.
 
 <br/>
 
-## 🔄 Como funciona
+## 🔄 How it works
 
 <div align="center">
-  <img src="docs/fluxo.png" alt="Fluxo: repo online, clone único, atualizar.txt, atualizar.sh, repos originais, cópia local" width="900"/>
+  <img src="docs/flow.png" alt="Flow: online repo, one-time clone, update.txt, update.sh, original repos, local copy" width="900"/>
 </div>
 
-1. Você clona este repositório uma vez.
-2. Você copia `atualizar.txt.exemplo` para `atualizar.txt` e deixa só os repos que quer atualizar.
-3. O script `scripts/atualizar.sh` baixa a última versão de cada repo da lista.
-4. O script troca a pasta `repos/<dono>/<nome>` pela versão nova, sem o `.git`.
-5. O script grava o commit exato de cada repo em `atualizar.lock`.
+1. You clone this repository once.
+2. You copy `update.txt.example` to `update.txt` and keep only the repos you want to update.
+3. The script `scripts/update.sh` downloads the latest version of each repo in the list.
+4. The script replaces the folder `repos/<owner>/<name>` with the new version, without `.git`.
+5. The script records the exact commit of each repo in `update.lock`.
 
-Repos que não estão em `atualizar.txt` ficam na primeira versão. O arquivo `sources.lock` mostra o commit dessa primeira versão.
+Repos that are not in `update.txt` stay on the first version. The file `sources.lock` shows the commit of that first version.
 
 <br/>
 
-## 🚀 Começar
+## 🚀 Getting started
 
 ```bash
 git clone https://github.com/ShadowsCrow/repos-base.git
 cd repos-base
-cp atualizar.txt.exemplo atualizar.txt
+cp update.txt.example update.txt
 ```
 
-Edite `atualizar.txt` e apague as linhas dos repos que você **não** quer atualizar. Depois rode:
+Edit `update.txt` and delete the lines of the repos you do **not** want to update. Then run:
 
 ```bash
-bash scripts/atualizar.sh              # atualiza a lista de atualizar.txt
-bash scripts/atualizar.sh --todos      # atualiza todas as fontes de sources.txt
-bash scripts/atualizar.sh dono/nome    # atualiza só um repo
+bash scripts/update.sh              # updates the list in update.txt
+bash scripts/update.sh --all        # updates every source in sources.txt
+bash scripts/update.sh owner/name   # updates one repo only
 ```
 
-> Requisitos: `git` e `bash`. No Windows, use o Git Bash.
+> Requirements: `git` and `bash`. On Windows, use Git Bash.
 
 <br/>
 
-## ⏰ Automatizar na sua máquina
+## ⏰ Automate it on your machine
 
-**Windows:** crie a tarefa agendada com o script pronto. Ela roda todo dia às 09:00 e ao fazer logon.
+**Windows:** create the scheduled task with the ready-made script. It runs every day at 09:00 and at logon.
 
 ```powershell
-powershell -File scripts\agendar.ps1 -Hora 09:00
+powershell -File scripts\schedule.ps1 -Time 09:00
 ```
 
-**Linux e macOS:** adicione uma linha no `crontab -e`.
+**Linux and macOS:** add one line with `crontab -e`.
 
 ```cron
-0 9 * * * cd /caminho/para/repos-base && bash scripts/atualizar.sh >> atualizar.log 2>&1
+0 9 * * * cd /path/to/repos-base && bash scripts/update.sh >> update.log 2>&1
 ```
 
-O log fica em `atualizar.log`. Para parar a automação, remova a tarefa ou a linha do cron.
+The log is in `update.log`. To stop the automation, remove the task or the cron line.
 
 <br/>
 
-## 📦 O que tem no acervo
+## 📦 What is in the collection
 
-| Repositório | O que é | Licença |
+| Repository | What it is | License |
 |---|---|---|
-| [yihui-dev/awesome-opus5-5-videos](https://github.com/yihui-dev/awesome-opus5-5-videos) | 703 prompts de vídeos feitos com o Claude Opus 5.5. | MIT |
-| [public-apis/public-apis](https://github.com/public-apis/public-apis) | Lista coletiva de APIs gratuitas. | MIT |
-| [morluto/rea](https://github.com/morluto/rea) | Engenharia reversa com agentes, do comportamento de apps até binários nativos. | MIT |
+| [yihui-dev/awesome-opus5-5-videos](https://github.com/yihui-dev/awesome-opus5-5-videos) | 703 prompts for videos made with Claude Opus 5.5. | MIT |
+| [public-apis/public-apis](https://github.com/public-apis/public-apis) | A community list of free APIs. | MIT |
+| [morluto/rea](https://github.com/morluto/rea) | Reverse engineering with agents, from app behavior down to native binaries. | MIT |
 
-Cada pasta em `repos/` mantém o arquivo de licença da fonte original.
-
-<br/>
-
-## ➕ Adicionar um repo
-
-1. Confira o tamanho e a licença do repo.
-2. Adicione `dono/nome` em `sources.txt`, uma fonte por linha.
-3. Adicione a mesma linha em `atualizar.txt`, se quiser que a sua máquina atualize esse repo.
-4. Rode `bash scripts/atualizar.sh dono/nome` para baixar a primeira cópia.
-
-Só entram em `atualizar.txt` os repos que estão em `sources.txt`.
+Each folder in `repos/` keeps the license file of the original source.
 
 <br/>
 
-## 🗂️ Estrutura
+## ➕ Add a repo
+
+1. Check the size and the license of the repo.
+2. Add `owner/name` to `sources.txt`, one source per line.
+3. Add the same line to `update.txt` if you want your machine to update that repo.
+4. Run `bash scripts/update.sh owner/name` to download the first copy.
+
+Only repos that are in `sources.txt` can go in `update.txt`.
+
+<br/>
+
+## 🗂️ Structure
 
 ```text
 repos-base/
-├── sources.txt            # catálogo: repos que o acervo contém
-├── sources.lock           # commit da primeira versão de cada repo
-├── atualizar.txt.exemplo  # modelo da sua lista de atualização
-├── atualizar.txt          # sua lista (local, fora do Git)
-├── atualizar.lock         # commit de cada atualização local (fora do Git)
-├── repos/<dono>/<nome>    # cópia de cada repo, sem .git
+├── sources.txt            # catalog: the repos the collection contains
+├── sources.lock           # commit of the first version of each repo
+├── update.txt.example     # template for your update list
+├── update.txt             # your list (local, not tracked by Git)
+├── update.lock            # commit of each local update (not tracked by Git)
+├── repos/<owner>/<name>   # copy of each repo, without .git
 ├── scripts/
-│   ├── atualizar.sh       # atualiza os repos escolhidos
-│   └── agendar.ps1        # cria a tarefa agendada no Windows
-└── docs/                  # diagrama deste README
+│   ├── update.sh          # updates the chosen repos
+│   └── schedule.ps1       # creates the scheduled task on Windows
+└── docs/                  # diagram used in this README
 ```
 
 <br/>
 
-## ⚠️ Cuidados
+## ⚠️ Cautions
 
-- **Não edite `repos/`.** A atualização substitui a pasta inteira do repo e apaga as suas mudanças.
-- **Sem histórico.** A cópia é um instantâneo sem `.git`. Para ter o histórico de uma fonte, clone a fonte à parte.
-- **Se uma fonte sumir,** o clone falha e a cópia anterior fica como está. O script mostra um aviso.
+- **Do not edit `repos/`.** An update replaces the whole folder of the repo and deletes your changes.
+- **No history.** The copy is a snapshot without `.git`. To get the history of a source, clone it separately.
+- **If a source disappears,** the clone fails and the previous copy stays as it is. The script prints a warning.
 
 <br/>
 
-## ⚖️ Licenças
+## ⚖️ Licenses
 
-Os repositórios do acervo pertencem aos autores originais e seguem as licenças deles. Este repositório só guarda cópias para uso pessoal.
+The repositories in the collection belong to their original authors and follow their licenses. This repository only stores copies for personal use.
 
 <br/>
 
 <div align="center">
 
-Feito por [**ShadowsCrow**](https://github.com/ShadowsCrow) · Tech Lead SRE AI & Automação
+Made by [**ShadowsCrow**](https://github.com/ShadowsCrow)
 
-⭐ Se o acervo ajudou, deixe uma estrela no repositório.
+⭐ If the collection helped you, leave a star on the repository.
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8e2de2,50:302b63,100:0f0c29&height=120&section=footer" alt="Rodapé"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8e2de2,50:302b63,100:0f0c29&height=120&section=footer" alt="Footer"/>
 
 </div>

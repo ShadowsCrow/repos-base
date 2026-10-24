@@ -1,6 +1,0 @@
-# Repos que a sua máquina atualiza sozinha. Um por linha, no formato dono/nome.
-# Só entram repos que estão em sources.txt. Apague a linha de quem você não quer atualizar.
-# Copie este arquivo para atualizar.txt (ele não vai para o Git).
-yihui-dev/awesome-opus5-5-videos
-public-apis/public-apis
-morluto/rea
